@@ -1,80 +1,196 @@
-<!DOCTYPE html>
 <html>
-<title>Title Text</title>
+<head>
+<title>Kevin Turing's Homepage</title>
 <style>
-body {
-  background-color: #ffd8f9;
+#sidebar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #aaa;
+    overflow-x: hidden;
+    padding: 20px 0 0 10px;
 }
-.plain {
-  list-style-type: none;
+#sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
-ul.publist li {
-  margin-bottom: 10px;
+#sidebar ul li {
+    margin-bottom: 5px;
 }
-nav li {
-  display: inline;
+#main {
+    margin-left: 200px;
 }
 section h1 {
-  font-size: 12pt;
+    font: bold 16pt Monospace;
+}
+section h2,
+article h1 {
+    font: bold 14pt Monospace;
+}
+article h2 {
+    font: bold 12pt Monospace;
+}
+article {
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 540px;
+    margin: 10px 5px;
+    padding: 0 20px;
+}
+p {
+    font: 12pt Sans-serif;
+    max-width: 500px;
+}
+a:link,
+a:visited {
+    font: bold 12pt Monospace;
+    color: #00f;
+    text-decoration: none;
+}
+a:hover {
+    font: bold 12pt Monospace;
+    color: #fff;
+    background-color: #000;
+    text-decoration: none;
+}
+@media screen and (max-width: 400) {
+    #sidebar {
+        visibility: hidden;
+    }
 }
 </style>
-
+</head>
 <body>
-<header>
-<h1>Page Header</h1>
-<h2>Kevin Andrew</h2>
-
-<!-- Contact -->
-<address>
-        Me!<br/>
-        me.
-</address>
-
-<!-- Navigation -->
-<nav>
-<ul>
-<li>A</li>
-<li>B</li>
-</ul>
-</nav>
-<hr/>
-</header>
-
-<section>
-<header>
-<h1> Projects (In Progress) </h1>
-</header>
-Article Text
+<section id="sidebar">
+    <nav>
+        <ul>
+            <li><a href="#news">What's Happening?</a></li>
+            <li><a href="#projects">Active Projects.</a></li>
+            <li><a href="#where">Where to find me.</a></li>
+        </ul>
+    </nav>
 </section>
-
-<section>
-<header>
-<h1> Publications </h1>
-</header>
-<ul class="plain publist">
-<li><div>
-Kevin Andrew<br/>
-Modeling the Cooperative and Adversarial Behaviors of Farmer and Regulator Agents in Vermont's Missisquoi Bay Area<br/>
-<i>Northeast Regional Conference on Complex Systems (NERCCS). 2019.</i><br/>
-[<a href="example.com">pdf</a>]        
-[<a href="example.com">abstract</a>]
-[<a href="example.com">slides (pdf)</a>]
-<details>
-details here
-</details>
-</div></li>
-<li><div>
-Kevin Andrew<br/>
-Article 2<br/>
-[<a>pdf</a>]        
-[<a>abstract</a>]
-[<a>slides (pdf)</a>]
-</div></li>
-</ul>
+<section id="main">
+<section id="title">
+    <header>
+        <h1>ovmoro</h1>
+    </header>
+    <p>
+    Hello, I'm Kevin Turing (@ovmoro pretty much everywhere),
+    and this is my temporary dumping ground.
+    </p>
+    <p>
+    This page is somewhat of a stopgap measure, in two ways.
+    Firstly, it's under construction as-is, and will take a little
+    work and a little time to get into any shape to actually be
+    used as a website.
+    And, as a result of imminent online chaos, the urgency of
+    its construction means I must release it as such.
+    </p>
+    <hr/>
 </section>
+<section id="news">
+    <header>
+        <h1>NEWS</h1>
+    </header>
+    <article>
+        <header>
+            <h1>I'm traveling</h1>
+            <address>
+                Kevin Turing
+                ---
+                <date datetime="2022-12-19">19 Dec 2022</date>
+            </address>
+        </header>
+        <main>
+            <p>
+            Of course I'm traveling while some of the most
+            dramatic online occurrences are going down.
+            </p>
+        </main>
+    </article>
+    <footer>
+        <nav>
+            <a href="#">TOP</a> |
+            <a href="#">Older posts...</a>
+        </nav>
+    </footer>
+</section>
+<section id="projects">
+    <header>
+        <h1>PROJECTS</h1>
+    </header>
+    <article>
+        <header>
+            <h1>Under Construction</h1>
+        </header>
+        <main>
+            <p>
+            When I get some more time,
+            I'll actually be able to flesh
+            this page out a bit more.
+            I'm hoping I'll be able to
+            by the start of the new year.
+            </p>
+        </main>
+    </article>
+    <footer>
+        <nav>
+            <a href="#">TOP</a>
+        </nav>
+    </footer>
+</section>
+<section id="where">
+    <header>
+        <h1>PLACES</h1>
+    </header>
+    <article>
+        <header>
+            <h1>Social Media</h1>
+        </header>
+        <main>
+            <p>
+            I'm going to be trying to focus my social
+            media on the following channels moving forward into
+            2023.
+            <ul>
+                <li>
+                    <a href="https://queer.party/@ovmoro?rel=me">
+                        @ovmoro@queer.party
+                    </a>
+                </li>
+                <li>
+                    <a href="https://instagram.com/ovmoro">
+                        @ovmoro@instagram.com
+                    </a>
+                </li>
+            </ul>
+            </p>
 
-<footer>
-Feet Go Here
-</footer>
+            <p>
+            I'm going to be trying to decrease my usage here,
+            but, for-completeness, I will include it.
+            <ul>
+                <li>
+                    <a href="https://twitter.com/ovmoro">
+                        @ovmoro@twitter.com
+                    </a>
+                </li>
+            </ul>
+            </p>
+        </main>
+    </article>
+    <footer>
+        <nav>
+            <a href="#">TOP</a>
+        </nav>
+    </footer>
+</section>
+</section>
+</section>
 </body>
 </html>
